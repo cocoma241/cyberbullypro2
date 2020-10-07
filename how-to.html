@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<style>
+    body{
+            background:#0b0a31;
+           font-family: "Lucida Console", Courier, monospace;
+            font-size: 20px;
+            color:white;
+        }
+        p {
+  animation-duration: 3s;
+  animation-name: slideup;
+}
+
+@keyframes slideup{
+  from {
+    margin-top: : -100%;
+    width: 200%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+        section{
+    max-width: 1000px;
+    margin-left: 550px;
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  position: relative;
+  z-index:2;
+}
+    .main{width:100vw;height:100vh;position:relative;}
+    .computer{
+            width:500px;height:650px;
+            margin:0 auto;
+            left:50%;top:50%;margin-top:-325px;margin-left:-250px;position:absolute;
+        }
+        .computer>a{
+            float:left;width:500px;height:650px;
+            background:url('computer.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+        .computer>a:hover{
+            background:url('logo-black.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+</style>
+
+<body>
+<section>
+<h1>How to define</h1>
+<h3>For parents:</h3>
+<p>Do take care of what children said. Research shows that 15% teenages had been though with cyberbully. Please do take it seriously. There are some useful web for parents.
+</p>
+<button onclick="myFunction()">More information</button>
+	<script>
+
+    function myFunction() {
+     location.href = "https://www.parenthelp.org.nz/bullying/";
+     }
+     </script>
+
+
+<h3>For people that been bullied:</h3>
+     <p>
+Don’t fare to ask people for help. There are websites that will offer help for free. At the meantime, save evidence for law support.
+</p>
+
+</section>
+<div class="main">
+    <div class="computer"><a href="index.html"></a></div>
+
+</body>
+
+</html>

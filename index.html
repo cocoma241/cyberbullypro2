@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cyberbully</title>
+
+    <style>
+        body{
+            background:#0b0a31;
+        }
+        .main{width:100vw;height:100vh;position:relative;}
+        .computer{
+            width:500px;height:650px;
+            margin:0 auto;
+            left:50%;top:50%;margin-top:-325px;margin-left:-250px;position:absolute;
+        }
+        .computer>a{
+            float:left;width:500px;height:650px;
+            background:url('computer.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+        .computer>a:hover{
+            background:url('logo-black.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+        .hl{
+            width:470px;
+            left:0;bottom:50%;position:absolute;
+        }
+        .hl .bgimg{width:470px;}
+        .hl .tip{width:150px;top:120%;right:50%;position:absolute;}
+        .hl .tip>img{width:150px;}
+        .hl>a:hover{
+             animation: wiggle 1s ease;
+             animation-iteration-count: 1;
+             transition:all 0.25s ease;
+
+             display: flex;               
+             align-items: center;         
+             justify-content: center;     
+             margin: 10px; 
+
+        }
+        @keyframes .hl {
+          20%  { transform: translateX(4px);  }
+          40%  { transform: translateX(-4px); }
+          60%  { transform: translateX(2px);  }
+          80%  { transform: translateX(-1px); }
+          100% { transform: translateX(0);    }
+        }
+        .hl.active {
+    background-color: #F0F8FF;
+}
+.hl.active_reverse {
+    background-color: transparent;
+}
+@keyframes .hl.active {
+    0%   {}
+    16%  { transform: translate3d(-27.5%, -27.5%, 0); }
+    50%  { transform: translate3d(55.1%, 55.1%, 0) scale(1); color: #FFF;}
+    62%  { color: transparent;  }
+    100% { transform: translate3d(55.1%, 55.1%, 0) scale(20); color: transparent; }
+}
+#hl.active {
+    animation: fx-el_topleft-active 1.6s 1 ease-in-out;
+}
+
+        .pl{
+            width:230px;
+            left:23%;bottom:0%;position:absolute;
+        }
+        .pl .bgimg{width:230px;}
+        .pl .tip{width:150px;top:40%;right:-50%;position:absolute;}
+        .pl .tip>img{width:150px;}
+        .pl>a:hover{
+             animation: wiggle 1s ease;
+             animation-iteration-count: 1;
+             transition:all 0.25s ease;
+
+             display: flex;               /* Use Flexbox on P              */
+             align-items: center;         /* Center P                      */
+             justify-content: center;     /* Center P                      */
+             margin: 10px; 
+
+        }
+        @keyframes .pl {
+          20%  { transform: translateX(4px);  }
+          40%  { transform: translateX(-4px); }
+          60%  { transform: translateX(2px);  }
+          80%  { transform: translateX(-1px); }
+          100% { transform: translateX(0);    }
+        }
+
+        .hr{
+            width:290px;
+            left:60%;bottom:0%;position:absolute;
+        }
+        .hr .bgimg{width:280px;}
+        .hr .tip{width:150px;top:50%;right:-50%;position:absolute;}
+        .hr .tip>img{width:150px;}
+        .hr>a:hover{
+             animation: wiggle 1s ease;
+             animation-iteration-count: 1;
+             transition:all 0.25s ease;
+
+             display: flex;               /* Use Flexbox on P              */
+             align-items: center;         /* Center P                      */
+             justify-content: center;     /* Center P                      */
+             margin: 10px; 
+
+        }
+        @keyframes .hr {
+          20%  { transform: translateX(4px);  }
+          40%  { transform: translateX(-4px); }
+          60%  { transform: translateX(2px);  }
+          80%  { transform: translateX(-1px); }
+          100% { transform: translateX(0);    }
+        }
+
+        .pr{
+            width:250px;
+            left:80%;bottom:55%;position:absolute;
+        }
+        .pr .bgimg{width:300px;}
+        .pr .tip{width:150px;top:80%;right:15%;position:absolute;}
+        .pr .tip>img{width:150px;}
+        .pr>a:hover{
+             animation: wiggle 1s ease;
+             animation-iteration-count: 1;
+             transition:all 0.25s ease;
+
+             display: flex;               /* Use Flexbox on P              */
+             align-items: center;         /* Center P                      */
+             justify-content: center;     /* Center P                      */
+             margin: 10px; 
+
+        }
+        @keyframes .pr {
+          20%  { transform: translateX(4px);  }
+          40%  { transform: translateX(-4px); }
+          60%  { transform: translateX(2px);  }
+          80%  { transform: translateX(-1px); }
+          100% { transform: translateX(0);    }
+        }
+    </style>
+<body>
+ 
+ <div class="main">
+    <div class="computer"><a href="index.html"></a></div>
+
+    <div class="hl">
+        <a href="what-is.html">
+            <img src="handleft.png" class="bgimg"/>
+            <div class="tip"><img src="what-is.png"/></div>
+        </a>
+    </div>
+    <div class="pl">
+        <a href="brief.html">
+            <img src="phoneleft.png" class="bgimg"/>
+            <div class="tip"><img src="effect.png"/></div>
+        </a>
+    </div>
+    <div class="hr">
+        <a href="how-to.html">
+            <img src="keyboardright.png" class="bgimg"/>
+            <div class="tip"><img src="define.png"/></div>
+        </a>
+    </div>
+    <div class="pr">
+        <a href="What-will.html">
+            <img src="phoneright.png" class="bgimg"/>
+            <div class="tip"><img src="concept.png"/></div>
+        </a>
+    </div>
+</div>
+
+</body>
+
+</html>

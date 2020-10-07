@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<style>
+	
+	body{background-image: linear-gradient(to bottom , #0b0a31, #000000);
+		font-family: "Lucida Console", Courier, monospace;
+            font-size: 20px;
+            color:white;
+		overflow-x: hidden;
+	}
+	p {
+  animation-duration: 3s;
+  animation-name: slideup;
+}
+
+@keyframes slideup{
+  from {
+    margin-top: : -100%;
+    width: 200%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+        section{
+    max-width: 1000px;
+    margin-left: 550px;
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  position: relative;
+  z-index:2;
+}
+    .main{width:100vw;height:100vh;position:relative;}
+    .computer{
+            width:500px;height:650px;
+            margin:0 auto;
+            left:50%;top:50%;margin-top:-325px;margin-left:-250px;position:absolute;
+        }
+        .computer>a{
+            float:left;width:500px;height:650px;
+            background:url('computer.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+        .computer>a:hover{
+            background:url('logo-black.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+#container {
+  padding-top:0px;
+  padding-left:600px;
+  padding-right:300px;
+  padding-bottom:300px;
+  border: 1px solid 000000;
+}
+* { margin:0; padding:0; }//reset css
+    .box { width:100%; height:1500px; background:gray; } 
+    .two { width:100%; height:2500px; }
+    .one h2 img{width:460px; height:600px;margin:0 0 0 -100px;left:42%; top:350px; display:block; position:relative;}
+    .animated { animation-duration:4s;-webkit-animation-duration:4s; -webkit-animation-fill-mode: both;animation-fill-mode: both; }
+    .lightup{
+    animation-name:lightup; -webkit-animation-name:lightup;}
+    @keyframes lightup { 
+        0% { opacity:0; transform:rotate(120deg);-webkit-transform:rotate(120deg);}
+        50% { opacity:0.5; transform:scale(1.5,1.5);-webkit-transform:scale(1.5,1.5);}
+        100% { opacity:1; transform: scale(1,1);-webkit-transform:scale(1,1);}
+    }
+    @-webkit-keyframes lightup { 
+        0% { opacity:0; transform:rotate(120deg);-webkit-transform:rotate(120deg);}
+        50% { opacity:0.5; transform:scale(1.5,1.5);-webkit-transform:scale(1.5,1.5);}
+        100% { opacity:1; transform:scale(1,1);-webkit-transform:scale(1,1);}
+    }
+
+</style>
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+
+<body>
+<section>
+<h1>How could cyberbully affect people?</h1>
+<p>Mallory Rose Grossman is a 12years old America girl, she died in june 14,2017. After 9 months and more of cyberbully. There was someone maked a snapchat video about her. Saying “You have no friends. When are you going to kill yourself?”
+</p>
+
+<img src="k1.png" alt="k1" style="width:300px;height:400px;">
+
+<p>
+Tyler Clementi is a 18 year old boy, he died in september 22,2010. His sex video with a male was been published online. He jumped off the George Washington Bridge and end his life. 
+</p>
+<img src="k2.png" alt="k2" style="width:300px;height:400px;">
+
+<p>
+	Docter An is a Chinese docter who living in YanDe. A famous blogger posted a video of her boyfriend hit a child. She and her boyfriend was been attacked by internet by five days. She eaten pills and killed herself. In the end people find out. That child had humiliation her, and the child’s parent has hit her in the locker room.
+</p>
+<img src="k3.png" alt="k3" style="width:300px;height:450px;">
+
+</section>
+
+<div class="box">
+    <div class="two"></div>
+    <div class="one">
+        <h2><img class="img01" src="light.png" /></h2>
+    </div>
+</div>
+<div id="container">
+<img src="candle bass.png" alt="candle" style="width:500px;height:450px;">
+</div>
+
+
+<h1><p>Keep your right to speak, keep your mind calm.</p></h1>
+<h1><p>When the darkness comes, you could be the only light shines out.
+</p></h1>
+
+
+   <div class="main">
+    <div class="computer"><a href="index.html"></a></div>
+
+</body>
+
+<script>
+        function getTop(clsName){ 
+            var obj = document.getElementsByClassName(clsName)[0];
+            return obj.getBoundingClientRect().top;
+        }
+
+        function getDom(clsName){
+            var obj=document.getElementsByClassName(clsName)[0];
+            return obj;
+        }
+
+
+
+        window.addEventListener('scroll',function(){
+            var scrollT=document.documentElement.scrollTop||document.body.scrollTop;
+
+            /*第二页动画的触发*/
+            if(getTop('two')>1300){
+                getDom('img01').classList.add('animated');
+                getDom('img01').classList.add('lightup');
+
+            }
+        })
+</script>
+ 
+</html>

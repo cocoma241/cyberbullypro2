@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+
+<html>
+<style>
+    body{
+            background:#0b0a31;
+           font-family: "Lucida Console", Courier, monospace;
+            font-size: 20px;
+            color:white;
+        }
+        p {
+  animation-duration: 3s;
+  animation-name: slideup;
+}
+
+@keyframes slideup{
+  from {
+    margin-top: : -100%;
+    width: 200%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+        section{
+    max-width: 1000px;
+    margin-left: 550px;
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  position: relative;
+  z-index:2;
+}
+    .main{width:100vw;height:100vh;position:relative;}
+    .computer{
+            width:500px;height:650px;
+            margin:0 auto;
+            left:50%;top:50%;margin-top:-325px;margin-left:-250px;position:absolute;
+        }
+        .computer>a{
+            float:left;width:500px;height:650px;
+            background:url('computer.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+        .computer>a:hover{
+            background:url('logo-black.png') no-repeat;
+            background-size:cover;
+            cursor:pointer;
+        }
+</style>
+
+<body>
+
+<section>
+<h1>What is cyberbully</h1>
+<p>Cyberbully is a bully behavior that happens over digital devices. Cyberbullying cloud happen thought social media, text, games and all kinds of online communication form.
+From Insulting language to fake contect，sometime even incloud personal information. Some country have laws for cyberbully, but each place have different situation.
+</p>
+
+     <h1>What is cyberstalking </h1>
+     <p>Cyberstalking is the use of the Internet or other electronic means to stalk or harass an individual, group, or organization. It may include false accusations, defamation, slander and libel. It may also include monitoring, identity theft, threats, vandalism, solicitation for sex, or gathering information that may be used to threaten, embarrass or harass.
+     <p>
+
+    <button onclick="myFunction()">More information
+    </button>
+
+	<script>
+
+    function myFunction() {
+     location.href = "https://en.wikipedia.org/wiki/Cyberstalking";
+     }
+     </script> 	
+
+</section>
+
+      <div class="main">
+    <div class="computer"><a href="index.html"></a></div>
+
+
+
+
+</body>
+
+</html>

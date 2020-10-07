@@ -1,0 +1,39 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: "Lucida Console", Courier, monospace;
+	font-size: 20px;
+  background-color: #0B0933;
+  color: white;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: 550px;
+	margin-right: 500px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+  position: relative;
+  z-index:2;
+}
+
+
+@keyframes wiggle {
+  20%  { transform: translateX(4px);  }
+  40%  { transform: translateX(-4px); }
+  60%  { transform: translateX(2px);  }
+  80%  { transform: translateX(-1px); }
+  100% { transform: translateX(0);    }
+}
+
+.wiggle:hover {
+  animation: wiggle 1s ease;
+  animation-iteration-count: 1;
+}
+
